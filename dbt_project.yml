@@ -14,12 +14,15 @@ macro-paths:
   - macros
 source-paths:
   - models
-test-paths:
+test-paths: 
   - tests
 target-path: target
+log-path: logs
 clean-targets:
     - "target"
     - "dbt_modules"
+    - "logs"
+
 
 vars:
   load_date: 'current_timestamp'
@@ -43,4 +46,8 @@ models:
       sats:
         tags:
           - 'satellite'
+    reports:
+      tags:
+        - 'orders'
+      materialized: view
 
