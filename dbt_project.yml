@@ -48,6 +48,6 @@ models:
           - 'satellite'
     reports:
       tags:
-        - 'orders'
+        - 'reports'
       materialized: view
 
