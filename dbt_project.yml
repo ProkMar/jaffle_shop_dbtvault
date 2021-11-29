@@ -21,7 +21,7 @@ log-path: logs
 clean-targets:
     - "target"
     - "dbt_modules"
-    - "logs"
+    - "logs"    
 
 
 vars:
@@ -46,8 +46,11 @@ models:
       sats:
         tags:
           - 'satellite'
+    pits:
+      tags:
+        - 'a_lja_pit'
+      materialized: view
     reports:
       tags:
         - 'reports'
       materialized: view
-

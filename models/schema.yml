@@ -6,4 +6,5 @@ sources:
     schema: dbt
     tables:
       - name: source_customers
+      - name: source_customers_crm
       - name: source_orders
