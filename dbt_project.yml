@@ -46,10 +46,7 @@ models:
       sats:
         tags:
           - 'satellite'
-    pits:
-      tags:
-        - 'a_lja_pit'
-      materialized: view
+    pits:      
     reports:
       tags:
         - 'reports'
